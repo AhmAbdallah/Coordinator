@@ -19,9 +19,11 @@ class HomeCoordinator: Coordinator {
     }
     
     func start() {
+      let homeVM = HomeViewModel()
       let vc = HomeViewController.instantiate("Main")
-        vc.coordinator = self
-        navigationController.pushViewController(vc, animated: false)
+      vc.coordinator = self
+      vc.homeVM = homeVM
+      navigationController.pushViewController(vc, animated: false)
     }
     func openSignup(){
         let vc = SignupViewController.instantiate("Main")

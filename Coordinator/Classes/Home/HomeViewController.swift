@@ -9,18 +9,20 @@
 import UIKit
 
 class HomeViewController: UIViewController, Storyboarded {
-    var coordinator: HomeCoordinator?
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
-    @IBAction func tappedLoginBTN(_ sender: Any) {
-        //coordinator!.openLogin(message: "Hello from BLBLBL")
-    }
-    @IBAction func tappedSignupBTN(_ sender: Any) {
-        coordinator!.openSignup()
-    }
-    
+  var coordinator: HomeCoordinator?
+  var homeVM: HomeViewModel?
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    // Do any additional setup after loading the view.
+  }
+  
+  @IBAction func tappedLoginBTN(_ sender: Any) {
+    //coordinator!.openLogin(message: "Hello from BLBLBL")
+  }
+  @IBAction func tappedSignupBTN(_ sender: Any) {
+    coordinator!.openSignup()
+  }
+  
 }
 

@@ -35,7 +35,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.94647675750000004" green="0.39244902129999998" blue="0.34478557110000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -57,7 +57,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="nIK-Oo-GLU" firstAttribute="centerY" secondItem="lw4-xE-7vE" secondAttribute="centerY" id="gLl-x2-uw5"/>
                             <constraint firstItem="nIK-Oo-GLU" firstAttribute="centerX" secondItem="lw4-xE-7vE" secondAttribute="centerX" id="saT-Bt-xFN"/>
@@ -70,7 +70,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qc0-Aw-ZLx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="757" y="21"/>
+            <point key="canvasLocation" x="746" y="84"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="ptQ-B3-gRW">
@@ -97,7 +97,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7xj-jz-pN8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1454" y="21"/>
+            <point key="canvasLocation" x="1458" y="84"/>
+        </scene>
+        <!--Brands View Controller-->
+        <scene sceneID="It6-K8-qaz">
+            <objects>
+                <viewController storyboardIdentifier="BrandsViewController" id="zHk-F9-vQh" customClass="BrandsViewController" customModule="Coordinator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bkj-so-oUs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.99917286630000002" green="0.75449705119999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="qRZ-Yh-dY9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NQd-Is-Yz6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2164" y="84"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="VLX-ne-14y">
+            <objects>
+                <viewController id="Xnu-vN-lCO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BDy-KU-uXG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="lTi-NT-0XT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7jt-Yi-Ghw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2871" y="84"/>
         </scene>
     </scenes>
 </document>

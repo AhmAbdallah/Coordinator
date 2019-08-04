@@ -104,11 +104,16 @@ struct _R: Rswift.Validatable {
     struct main: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
       typealias InitialController = HomeViewController
       
+      let brandsViewController = StoryboardViewControllerResource<BrandsViewController>(identifier: "BrandsViewController")
       let bundle = R.hostingBundle
       let homeViewController = StoryboardViewControllerResource<HomeViewController>(identifier: "HomeViewController")
       let loginViewController = StoryboardViewControllerResource<LoginViewController>(identifier: "LoginViewController")
       let name = "Main"
       let signupViewController = StoryboardViewControllerResource<SignupViewController>(identifier: "SignupViewController")
+      
+      func brandsViewController(_: Void = ()) -> BrandsViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: brandsViewController)
+      }
       
       func homeViewController(_: Void = ()) -> HomeViewController? {
         return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: homeViewController)
@@ -125,6 +130,7 @@ struct _R: Rswift.Validatable {
       static func validate() throws {
         if #available(iOS 11.0, *) {
         }
+        if _R.storyboard.main().brandsViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'brandsViewController' could not be loaded from storyboard 'Main' as 'BrandsViewController'.") }
         if _R.storyboard.main().homeViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'homeViewController' could not be loaded from storyboard 'Main' as 'HomeViewController'.") }
         if _R.storyboard.main().loginViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'loginViewController' could not be loaded from storyboard 'Main' as 'LoginViewController'.") }
         if _R.storyboard.main().signupViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'signupViewController' could not be loaded from storyboard 'Main' as 'SignupViewController'.") }

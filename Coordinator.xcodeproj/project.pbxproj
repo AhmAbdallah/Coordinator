@@ -23,6 +23,10 @@
 		870A195722ECDF13008D383B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870A195622ECDF13008D383B /* LoginViewController.swift */; };
 		870A195922ECDF22008D383B /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870A195822ECDF22008D383B /* SignupViewController.swift */; };
 		87E397B622F76B5D00CF5AEA /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E397B522F76B5D00CF5AEA /* R.generated.swift */; };
+		87E397B822F7717300CF5AEA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E397B722F7717300CF5AEA /* HomeViewModel.swift */; };
+		87E397BB22F7725A00CF5AEA /* BrandsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E397BA22F7725A00CF5AEA /* BrandsViewController.swift */; };
+		87E397BD22F7726A00CF5AEA /* BrandsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E397BC22F7726A00CF5AEA /* BrandsViewModel.swift */; };
+		87E397BF22F772B800CF5AEA /* BrandsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E397BE22F772B800CF5AEA /* BrandsCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +68,10 @@
 		870A195622ECDF13008D383B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		870A195822ECDF22008D383B /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		87E397B522F76B5D00CF5AEA /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		87E397B722F7717300CF5AEA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		87E397BA22F7725A00CF5AEA /* BrandsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandsViewController.swift; sourceTree = "<group>"; };
+		87E397BC22F7726A00CF5AEA /* BrandsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandsViewModel.swift; sourceTree = "<group>"; };
+		87E397BE22F772B800CF5AEA /* BrandsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandsCoordinator.swift; sourceTree = "<group>"; };
 		8809C3C60709BFD44E88D3ED /* Pods-CoordinatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoordinatorUITests.release.xcconfig"; path = "Target Support Files/Pods-CoordinatorUITests/Pods-CoordinatorUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B2E3AFA32340DBE58DD1E04E /* Pods-Coordinator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coordinator.release.xcconfig"; path = "Target Support Files/Pods-Coordinator/Pods-Coordinator.release.xcconfig"; sourceTree = "<group>"; };
 		C58841B87211BE6E4B7E959D /* Pods-CoordinatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoordinatorUITests.debug.xcconfig"; path = "Target Support Files/Pods-CoordinatorUITests/Pods-CoordinatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +124,7 @@
 			children = (
 				870A195022ECDC13008D383B /* Coordinator.swift */,
 				870A195422ECDD7E008D383B /* HomeCoordinator.swift */,
+				87E397BE22F772B800CF5AEA /* BrandsCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -124,8 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				870215B522F7661500D201D9 /* Assets.xcassets */,
-				870215B722F7662E00D201D9 /* LaunchScreen.storyboard */,
 				870215B922F7662E00D201D9 /* Main.storyboard */,
+				870215B722F7662E00D201D9 /* LaunchScreen.storyboard */,
 				870215BD22F7663F00D201D9 /* Info.plist */,
 				87E397B522F76B5D00CF5AEA /* R.generated.swift */,
 			);
@@ -144,6 +153,7 @@
 		870215C022F7692300D201D9 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				87E397B922F7724400CF5AEA /* Brands */,
 				870215C122F7696B00D201D9 /* Home */,
 				870A195622ECDF13008D383B /* LoginViewController.swift */,
 				870A195822ECDF22008D383B /* SignupViewController.swift */,
@@ -155,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				870A192422ECDBFE008D383B /* HomeViewController.swift */,
+				87E397B722F7717300CF5AEA /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -208,6 +219,15 @@
 				870A194422ECDBFF008D383B /* Info.plist */,
 			);
 			path = CoordinatorUITests;
+			sourceTree = "<group>";
+		};
+		87E397B922F7724400CF5AEA /* Brands */ = {
+			isa = PBXGroup;
+			children = (
+				87E397BA22F7725A00CF5AEA /* BrandsViewController.swift */,
+				87E397BC22F7726A00CF5AEA /* BrandsViewModel.swift */,
+			);
+			path = Brands;
 			sourceTree = "<group>";
 		};
 		937CD1F83382A666865886FC /* Pods */ = {
@@ -465,11 +485,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87E397BB22F7725A00CF5AEA /* BrandsViewController.swift in Sources */,
 				870A195722ECDF13008D383B /* LoginViewController.swift in Sources */,
+				87E397B822F7717300CF5AEA /* HomeViewModel.swift in Sources */,
 				870A195922ECDF22008D383B /* SignupViewController.swift in Sources */,
 				870A192522ECDBFE008D383B /* HomeViewController.swift in Sources */,
 				87E397B622F76B5D00CF5AEA /* R.generated.swift in Sources */,
 				870A192322ECDBFE008D383B /* AppDelegate.swift in Sources */,
+				87E397BD22F7726A00CF5AEA /* BrandsViewModel.swift in Sources */,
+				87E397BF22F772B800CF5AEA /* BrandsCoordinator.swift in Sources */,
 				870A195122ECDC13008D383B /* Coordinator.swift in Sources */,
 				870A195522ECDD7E008D383B /* HomeCoordinator.swift in Sources */,
 				870A195322ECDC79008D383B /* Storyboarded.swift in Sources */,
