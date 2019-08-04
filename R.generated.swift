@@ -16,6 +16,33 @@ struct R: Rswift.Validatable {
     try intern.validate()
   }
   
+  /// This `R.image` struct is generated, and contains static references to 3 images.
+  struct image {
+    /// Image `ic-BrandsTabBar`.
+    static let icBrandsTabBar = Rswift.ImageResource(bundle: R.hostingBundle, name: "ic-BrandsTabBar")
+    /// Image `ic-HomeTabBar`.
+    static let icHomeTabBar = Rswift.ImageResource(bundle: R.hostingBundle, name: "ic-HomeTabBar")
+    /// Image `ic-ProfileTabBar`.
+    static let icProfileTabBar = Rswift.ImageResource(bundle: R.hostingBundle, name: "ic-ProfileTabBar")
+    
+    /// `UIImage(named: "ic-BrandsTabBar", bundle: ..., traitCollection: ...)`
+    static func icBrandsTabBar(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.icBrandsTabBar, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "ic-HomeTabBar", bundle: ..., traitCollection: ...)`
+    static func icHomeTabBar(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.icHomeTabBar, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "ic-ProfileTabBar", bundle: ..., traitCollection: ...)`
+    static func icProfileTabBar(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.icProfileTabBar, compatibleWith: traitCollection)
+    }
+    
+    fileprivate init() {}
+  }
+  
   /// This `R.storyboard` struct is generated, and contains static references to 2 storyboards.
   struct storyboard {
     /// Storyboard `LaunchScreen`.
